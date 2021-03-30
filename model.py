@@ -190,7 +190,7 @@ for epoch in range(epochs):
             test_y = drn_dwwc(x_valid)
             pred_y = torch.max(test_y,1)[1]
             accuracy = sum(pred_y == y_valid)/ 1500
-            #print('Epoch:',epoch,'|train loss:'+str(loss.item()))
+            print('Epoch:',epoch,'|train loss:'+str(loss.item()))
             print('Epoch:',epoch,'|train loss:'+str(loss.item()),'|test accuracy:'+str(accuracy))
             
 
